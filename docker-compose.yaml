@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma-medium
+    volumes:
+      - ./data/uptime-kuma:/app/data
+    ports:
+      - 3001:3001
+    restart: always
+
+
+# W8qQA3yVMffuNBoesVwNXG7ma1xp54Uz27MTrioBMJ2
